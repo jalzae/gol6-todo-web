@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-gray-100">
+    <div class="bg-green-100">
       <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
           <router-link
@@ -30,9 +30,18 @@
           :class="showMenu ? 'flex' : 'hidden'"
           class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
         >
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">Home</li>
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">Task</li>
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">Employe</li>
+          <li
+            class="text-sm font-bold text-gray-800 hover:text-blue-400"
+            @click="$parent.selectMenu('task')"
+          >
+            Task
+          </li>
+          <li
+            class="text-sm font-bold text-gray-800 hover:text-blue-400"
+            @click="$parent.selectMenu('employe')"
+          >
+            Employe
+          </li>
         </ul>
       </nav>
     </div>
