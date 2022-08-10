@@ -70,7 +70,9 @@ export default {
   computed: {},
   props: ["selected"],
   data() {
-    return {};
+    return {
+      list: [],
+    };
   },
   methods: {
     async fetch() {
@@ -88,6 +90,7 @@ export default {
   },
   created() {
     this.fetch();
+    this.selected.entry_date = this.selected.entry_date.split("T")[0];
   },
 };
 </script>

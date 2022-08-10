@@ -1,3 +1,4 @@
+import moment from 'moment'
 export default {
   methods: {
     getalltask() {
@@ -35,5 +36,8 @@ export default {
         headers: null
       });
     },
+    formatDate(date) {
+      return moment(String(date)).format('MM/DD/YYYY');
+    }
   }
 }
