@@ -44,8 +44,8 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // baseURL: 'https://warm-bastion-86960.herokuapp.com/'
-    baseURL: 'http://localhost:8080/'
+    baseURL: 'https://warm-bastion-86960.herokuapp.com/'
+    // baseURL: 'http://localhost:8080/'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
